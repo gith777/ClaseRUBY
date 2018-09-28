@@ -67,3 +67,5 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 puts frutas.join(', ')
 
 puts frutas.sort.join (', ')
+
+puts frutas.include?('Durazno')
