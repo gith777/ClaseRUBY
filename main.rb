@@ -55,6 +55,11 @@
 
 frutas = ['Manzana', 'Pera', 'Uva']
 
-puts frutas[1]
+# con esto se imprime puts frutas[1]
 
-
+#ciclo each recorre el arreglo y imprime cada elemento del 
+#arreglo
+frutas.each do | fruta|
+	puts fruta
+	
+end
