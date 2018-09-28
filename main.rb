@@ -91,4 +91,12 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 	puts "Hola"
 end
 
+5.upto(10) do |valor|
+	puts valor
+end
+
+10.downto (5) do |valor|
+	puts valor
+end
+
 
