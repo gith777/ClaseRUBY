@@ -64,14 +64,21 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 	
 #end
 #Me separa cada uno de los elementos del arreglos por comas...
-puts frutas.join(', ')
+#puts frutas.join(', ')
 
-puts frutas.sort.join (', ')
+#puts frutas.sort.join (', ')
 
-puts frutas.include?('Durazno')
+#puts frutas.include?('Durazno')
 
 #Este metodo me permite recorrer funciona como un FOR
-(1..5).each do |numero|
-	puts "El numero vale #{numero}"
+#(1..5).each do |numero|
+#	puts "El numero vale #{numero}"
 
+#end
+
+i=0 
+while i<10
+	puts "I vale #{i}"
+	i=i+1
 end
+
