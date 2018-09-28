@@ -69,3 +69,9 @@ puts frutas.join(', ')
 puts frutas.sort.join (', ')
 
 puts frutas.include?('Durazno')
+
+#Este metodo me permite recorrer funciona como un FOR
+(1..5).each do |numero|
+	puts "El numero vale #{numero}"
+
+end
