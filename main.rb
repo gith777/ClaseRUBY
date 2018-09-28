@@ -34,24 +34,27 @@
 	#puts "El número uno no es mayor que el segundo número"
 #end
 
-puts "Ingresa tu calificación:"
+#puts "Ingresa tu calificación:"
+#
+#calificacion = gets.chomp.to_i
+#
+#case calificacion
+#	when 5
+#		puts "Excelente"
+#	when 4
+#		puts "Sobresaliente"
+#	when 3
+#		puts "Aceptable"
+#	when 2
+#		puts "Insuficiente"
+#	when 1, 0
+#		puts "Deficiente"
+#	else
+#		puts "NOTA! NO valida"
+#end
 
-calificacion = gets.chomp.to_i
+frutas = ['Manzana', 'Pera', 'Uva']
 
-case calificacion
-	when 5
-		puts "Excelente"
-	when 4
-		puts "Sobresaliente"
-	when 3
-		puts "Aceptable"
-	when 2
-		puts "Insuficiente"
-	when 1, 0
-		puts "Deficiente"
-	else
-		puts "NOTA! NO valida"
-end
-
+puts frutas[1]
 
 
