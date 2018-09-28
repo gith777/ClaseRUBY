@@ -53,7 +53,7 @@
 #		puts "NOTA! NO valida"
 #end
 
-frutas = ['Manzana', 'Pera', 'Uva']
+frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 
 # con esto se imprime puts frutas[1]
 
@@ -63,5 +63,7 @@ frutas = ['Manzana', 'Pera', 'Uva']
 #	puts fruta
 	
 #end
-
+#Me separa cada uno de los elementos del arreglos por comas...
 puts frutas.join(', ')
+
+puts frutas.sort.join (', ')
