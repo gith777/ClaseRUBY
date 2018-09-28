@@ -59,7 +59,9 @@ frutas = ['Manzana', 'Pera', 'Uva']
 
 #ciclo each recorre el arreglo y imprime cada elemento del 
 #arreglo
-frutas.each do | fruta|
-	puts fruta
+#frutas.each do | fruta|
+#	puts fruta
 	
-end
+#end
+
+puts frutas.join(', ')
