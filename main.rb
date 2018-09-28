@@ -76,9 +76,14 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 
 #end
 
-i=0 
-while i<10
-	puts "I vale #{i}"
+#i=0 
+#while i<10
+#	puts "I vale #{i}"
+#	i=i+1
+#end
+i=0
+begin
+	puts "i vale #{i}"
 	i=i+1
-end
+end while i<10
 
