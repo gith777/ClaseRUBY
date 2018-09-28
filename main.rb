@@ -87,16 +87,23 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 #	i=i+1
 #end while i<10
 
-5.times do
-	puts "Hola"
-end
+#5.times do
+#	puts "Hola"
+#end
 
-5.upto(10) do |valor|
-	puts valor
-end
+#5.upto(10) do |valor|
+#	puts valor
+#end
 
-10.downto (5) do |valor|
-	puts valor
-end
+#10.downto (5) do |valor|
+#	puts valor
+#end
 
+persona = { "nombre" => "Yefersson","edad" => 27 }
 
+puts persona ["edad"] 
+
+persona.each do |clave, valor|
+	puts "La clave #{clave}, y el valor es #{valor}"
+
+end 
