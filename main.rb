@@ -99,8 +99,8 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 #	puts valor
 #end
 
-persona = { "nombre" => "Yefersson","edad" => 27 }
-
+#persona = { "nombre" => "Yefersson","edad" => 27 }
+persona ={nombre: "Yefersson", edad: 27}
 #puts persona ["edad"] 
 
 #persona.each do |clave, valor|
@@ -114,4 +114,14 @@ persona = { "nombre" => "Yefersson","edad" => 27 }
 #me infica si existe una llave dentro de un hash
 #puts persona.has_key?("edad")
 
-puts persona.keys
+#puts persona.keys
+
+#puts persona[:nombre]
+
+def cuadrado(numero)
+	return numero*numero
+end
+
+puts "Ingresa un numero:"
+mi_numero= gets.chomp.to_f
+puts "El cuadrado es: #{cuadrado(mi_numero)}"
