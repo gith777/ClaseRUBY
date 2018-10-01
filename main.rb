@@ -53,7 +53,7 @@
 #		puts "NOTA! NO valida"
 #end
 
-frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
+#frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 
 # con esto se imprime puts frutas[1]
 
@@ -100,7 +100,7 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 #end
 
 #persona = { "nombre" => "Yefersson","edad" => 27 }
-persona ={nombre: "Yefersson", edad: 27}
+#persona ={nombre: "Yefersson", edad: 27}
 #puts persona ["edad"] 
 
 #persona.each do |clave, valor|
@@ -152,17 +152,55 @@ persona ={nombre: "Yefersson", edad: 27}
 #inicial, el metodo lo utiliza si no 
 #especificamos
 
-#-----------------------------------------------------
+#-----------------------------------------------------#
 
-Class persona
+class Persona
 	
 	attr_accessor :nombre, :edad #asi se declaran las variables
+
+	def initialize(nombre, edad)
+			self.nombre = nombre
+			self.edad = edad
+	end
 
 	def saludar #asi definimos los metodos
 		puts "Hola"
 	end
+end
+#-----------------------
+class Alumno < Persona
+
+	attr_accessor :codigo
+
+	def estudiar
+		puts "Estoy estudiando"
+	end 
+
+	def saludar
+		super #va a ejecutar el metodo saludar de la clase padre
+		#el super solo se usa cuando cuando queremos 
+		#llamar un metodo del padre
+		puts "Profe"
+	end
 
 end
+
+persona_uno = Persona.new("Juan", 50)
+persona_dos = Persona.new("Maria", 37)
+
+#persona_uno.nombre = "yefersson"
+#persona_dos.nombre = "gineth"
+
+persona_dos.saludar #Hola
+puts persona_uno.nombre #Juan
+puts "la edad de la persona uno es #{persona_uno.edad}"
+
+alumno_uno = Alumno.new("Jaimito", 17)
+
+alumno_uno.estudiar
+alumno_uno.saludar
+
+
 
 
 
