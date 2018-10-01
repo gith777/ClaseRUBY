@@ -99,7 +99,7 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 #	puts valor
 #end
 
-#persona = { "nombre" => "Yefersson","edad" => 27 }
+persona = { "nombre" => "Yefersson","edad" => 27 }
 
 #puts persona ["edad"] 
 
@@ -113,3 +113,5 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 
 #me infica si existe una llave dentro de un hash
 #puts persona.has_key?("edad")
+
+puts persona.keys
