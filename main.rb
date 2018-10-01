@@ -99,11 +99,17 @@ frutas = ['Manzana', 'Pera', 'Uva', 'Anon','Durazno']
 #	puts valor
 #end
 
-persona = { "nombre" => "Yefersson","edad" => 27 }
+#persona = { "nombre" => "Yefersson","edad" => 27 }
 
-puts persona ["edad"] 
+#puts persona ["edad"] 
 
-persona.each do |clave, valor|
-	puts "La clave #{clave}, y el valor es #{valor}"
+#persona.each do |clave, valor|
+#	puts "La clave #{clave}, y el valor es #{valor}"
 
-end 
+#   end 
+
+
+#puts persona.length
+
+#me infica si existe una llave dentro de un hash
+#puts persona.has_key?("edad")
