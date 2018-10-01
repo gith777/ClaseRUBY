@@ -138,16 +138,53 @@ persona ={nombre: "Yefersson", edad: 27}
 #El operador splat convierte todos los parametros que enviemos
 #en un arreglo dentro del metodo
 
-def suma(numero_uno:0, numero_dos:0)
-	return numero_uno+numero_dos
-end 
+#def suma(numero_uno:0, numero_dos:0)
+#	return numero_uno+numero_dos
+#end 
 
-puts suma(numero_dos:4, numero_uno:7)
+#puts suma(numero_dos:4, numero_uno:7)
 #Los keyword argument me permite bautizar los parametros
 #de tal modo que yo lo pueda enviar como yo quiera
 
-puts suma(numero_dos:4)
+#puts suma(numero_dos:4)
 #Los keywords argument tambien permiten 
 #inicializar valores, este valor 
 #inicial, el metodo lo utiliza si no 
 #especificamos
+
+#-----------------------------------------------------
+
+Class persona
+	
+	attr_accessor :nombre, :edad #asi se declaran las variables
+
+	def saludar #asi definimos los metodos
+		puts "Hola"
+	end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
