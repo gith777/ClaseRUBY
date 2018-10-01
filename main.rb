@@ -118,10 +118,36 @@ persona ={nombre: "Yefersson", edad: 27}
 
 #puts persona[:nombre]
 
-def cuadrado(numero)
-	return numero*numero
-end
+#de esta forma podemos crear un Metodo
+#def cuadrado(numero)
+#	return numero*numero
+#end
 
-puts "Ingresa un numero:"
-mi_numero= gets.chomp.to_f
-puts "El cuadrado es: #{cuadrado(mi_numero)}"
+#puts "Ingresa un numero:"
+#mi_numero= gets.chomp.to_f
+#puts "El cuadrado es: #{cuadrado(mi_numero)}
+
+#def hola_personas(*personas)
+#	personas.each do |persona|
+#		puts "Hola #{persona}"
+#	end
+#end
+
+#gente =['Jaime','Alberto','Pedro']
+#hola_personas ('Jaime'.'Alberto','Juan','Pedro'*gente)
+#El operador splat convierte todos los parametros que enviemos
+#en un arreglo dentro del metodo
+
+def suma(numero_uno:0, numero_dos:0)
+	return numero_uno+numero_dos
+end 
+
+puts suma(numero_dos:4, numero_uno:7)
+#Los keyword argument me permite bautizar los parametros
+#de tal modo que yo lo pueda enviar como yo quiera
+
+puts suma(numero_dos:4)
+#Los keywords argument tambien permiten 
+#inicializar valores, este valor 
+#inicial, el metodo lo utiliza si no 
+#especificamos
